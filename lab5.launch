@@ -1,0 +1,10 @@
+<launch>
+	
+	<rosparam param='goalx'>4.0</rosparam>
+	<rosparam param='goaly'>9.0</rosparam>
+	
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab5)/world/playground.world" />
+	<node name ="python_script" pkg = "lab5" type = "astaralgo.py" output = "screen" />
+
+</launch>
